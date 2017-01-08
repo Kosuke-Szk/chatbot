@@ -13,7 +13,6 @@ def dispose():
   return outputlist
 
 def show_users(request):
-  outputlist = dispose()
   return HttpResponse(serializers.serialize("json", User.objects.all()))
 
 def show_usernames(request):

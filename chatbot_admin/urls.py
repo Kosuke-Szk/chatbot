@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from chatbot_admin import views
-from chatbot_admin import apis
+from chatbot_admin import apis, userapis
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^users$', views.show_users),
     url(r'^api/', include(apis.router.urls)),
+    url(r'^userapi/', include(userapis.router.urls)),
     url(r'^usernames', views.show_usernames),
 ]
