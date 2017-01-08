@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chatbot_admin',
     'rest_framework',
-    'djangorestframework',
     'gunicorn',
 ]
 
