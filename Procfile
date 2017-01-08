@@ -1,1 +1,1 @@
-web: gunicorn chatbot_admin.wsgi chatbot_admin:app --log-file -
+web: python manage.py runserver 0.0.0.0:$PORT --noreload
